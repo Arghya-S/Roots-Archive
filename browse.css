@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Noto+Serif+KR:wght@200..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Noto+Serif+KR:wght@200..900&family=Poiret+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    background-color: #121212;
+    color: #f1f1f1;
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0.5em 10% 5% 10%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+/* Navigation container styling */
+nav {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+    margin-bottom: 0.5em;
+    padding-bottom: 0.5em;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* Login and signup button styling */
+.login button {
+    background-color: #ffcc00;
+    color: #121212;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.login button:hover {
+    background-color: #ffe680;
+    color: #000;
+}
+
+/* Navigation links styling */
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+    font-size: 1.1rem;
+    text-align: right;
+}
+
+ul li {
+    cursor: pointer;
+    margin: 1em;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+ul li:hover {
+    color: #ffcc00; 
+}
+
+/* General button styling */
+button {
+    color: rgba(255, 255, 255, 0.6); 
+    background-color: rgba(0, 0, 0, 0.2);
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+button:hover {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+}
+a:hover{
+    color: rgba(255, 255, 255, 0.8);
+}
+
+button:disabled {
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+button.secondary {
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1024px) {
+    body {
+        padding: 1.5em 5%;
+    }
+
+    main {
+        max-width: 100%;
+    }
+
+    header {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .login {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    main input {
+        font-size: 0.9rem;
+    }
+
+    button {
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
+    }
+}
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    ul {
+        font-size: 0.9rem;
+    }
+
+    button {
+        padding: 0.5rem 0.8rem;
+        font-size: 0.8rem;
+    }
+}
+
+.articles{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.articles * {
+    transition: border 0.3s ease;
+    transition: background-color 0.1s ease;
+}
+
+.article-description {
+    display: flex;
+    flex-direction: column;
+    width: 350px;    
+    padding: 2%;
+}
+
+.article-description img{
+    width: 95%;
+    height: 200px;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.tags{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: fit-content;
+    gap: 1em;
+}
+
+.article-description:hover{
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+}
+
+.article-description .heading {
+    font-size: 1.25em;
+}
+
+.tags .tag:hover{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.tags .tag {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 0.5em;
+}
+
+main input {
+    width: 60%;
+    padding: 0.8rem;
+    margin: 2%;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    background-color: #232323;
+    color: #fff;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+main input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+main input:focus {
+    outline: none;
+    border-color: #ffcc00; 
+}
+
+.time-update {
+    color: rgba(255, 255, 255, 0.6);
+}
