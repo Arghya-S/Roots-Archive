@@ -1,0 +1,9 @@
+html, body {
+  color: #f1f1f1;
+  background-color: #121212;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  padding: 0 10% 5% 10%;
+}

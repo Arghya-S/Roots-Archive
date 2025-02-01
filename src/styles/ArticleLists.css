@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Noto+Serif+KR:wght@200..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Noto+Serif+KR:wght@200..900&family=Poiret+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Media queries for responsiveness */
+@media (max-width: 1024px) {
+    body {
+        padding: 1.5em 5%;
+    }
+
+    main {
+        max-width: 100%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    #browse main h1 {
+        font-size: 3rem;
+    }
+
+    #browse main input {
+        font-size: 0.9rem;
+    }
+}
+@media (max-width: 480px) {
+    #browse main h1 {
+        font-size: 2.5rem;
+    }
+}
+
+
+.articles{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.articles * {
+    transition: border 0.3s ease;
+    transition: background-color 0.1s ease;
+}
+
+#browse main input {
+    width: 60%;
+    padding: 0.8rem;
+    margin: 2%;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    background-color: #232323;
+    color: #fff;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+#browse main input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+#browse main input:focus {
+    outline: none;
+    border-color: #ffcc00; 
+}

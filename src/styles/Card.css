@@ -1,0 +1,44 @@
+.article-description {
+    display: flex;
+    flex-direction: column;
+    width: 350px;    
+    padding: 2%;
+}
+
+.article-description img{
+    width: 95%;
+    height: 200px;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.tags{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: fit-content;
+    gap: 1em;
+}
+
+.article-description:hover{
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+}
+
+.article-description .heading {
+    font-size: 1.25em;
+}
+
+.tags .tag:hover{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.tags .tag {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 0.5em;
+}
+
+.time-update {
+    color: rgba(255, 255, 255, 0.6);
+}

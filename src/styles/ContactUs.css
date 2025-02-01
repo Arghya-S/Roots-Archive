@@ -1,0 +1,99 @@
+/* Import Google Fonts (Optimized) */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Noto+Serif+KR:wght@200..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Poiret+One&display=swap');
+
+#contact-us {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#contact-us main h1 {
+    color: #f1f1f1;
+    font-size: 2rem;
+    margin: 0;
+}
+
+#contact-us main form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px; /* Prevent form from being too wide */
+}
+
+/* Input & Textarea */
+#contact-us main input, 
+#contact-us main textarea {
+    width: 100%;
+    max-width: 600px; /* Prevent shrinking */
+    padding: 1rem; /* Better spacing */
+    margin-bottom: 1rem; /* Proper spacing */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    background-color: #232323;
+    color: #fff;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+#contact-us main textarea {
+    height: 200px;
+    font-family: "Roboto", sans-serif;
+    resize: vertical; /* Allow resizing */
+}
+
+#contact-us main input::placeholder,
+#contact-us main textarea::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+#contact-us main input:focus, 
+#contact-us main textarea:focus {
+    outline: none;
+    border-color: #ffcc00; /* Match theme */
+}
+
+/* Submit Button */
+#form-submit {
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    width: fit-content;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#form-submit:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Responsive Fixes */
+@media (max-width: 768px) {
+    #contact-us main h1 {
+        font-size: 2rem;
+    }
+
+    #contact-us main form {
+        max-width: 100%;
+    }
+
+    #contact-us main input, 
+    #contact-us main textarea {
+        font-size: 0.9rem;
+        padding: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #contact-us main h1 {
+        font-size: 1.8rem;
+    }
+
+    #contact-us main button {
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
+    }
+}
