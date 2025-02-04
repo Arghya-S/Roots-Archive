@@ -1,0 +1,66 @@
+.upload {
+    max-width: 500px;
+    padding: 20px;
+    margin: auto 0;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.upload h2 {
+    font-size: 1.8rem;
+    color: #ccc;
+    margin-bottom: 10px;
+}
+
+.upload label {
+    font-size: 1rem;
+    color: #bbb;
+    font-weight: 500;
+}
+
+.upload p {
+    font-size: 1rem;
+    color: #aaa;
+    margin: 15px 0;
+}
+
+.upload ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.upload ul li {
+    font-size: 0.95rem;
+    list-style-type: circle;
+    color: #bbb;
+    margin: 5px 0;
+    width: 30%;
+    line-height: 1.4;
+}
+
+.upload input {
+    max-width: 600px; 
+    padding: 0.75em; 
+    margin-left: 5px;
+    color: #fff;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.upload input:hover {
+    cursor: pointer;
+}
+
+.upload p {
+    color: #dcdcdc;
+    font-weight: 700;
+}
+
+#submit-file {
+    border-radius: 5px;
+    background-color:rgba(255, 255, 255, 0.3);
+}

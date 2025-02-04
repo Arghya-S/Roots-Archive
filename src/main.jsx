@@ -2,10 +2,10 @@ import { StrictMode } from "react"
 import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css"
-import App from "./App";
 import Home from "./pages/Home"
 import ContactUs from "./pages/ContactUs"
 import Browse from "./pages/Browse";
+import OralHistory from "./pages/OralHistory";
 
 const router = createBrowserRouter([
   {
@@ -17,8 +17,8 @@ const router = createBrowserRouter([
     element: <Browse />,
   },
   {
-    path: "/archives",
-    element: <App />,
+    path: "/record-oral-history",
+    element: <OralHistory />,
   },
   {
     path: "/contact-us",

@@ -6,8 +6,7 @@ export default function Navbar() {
         <nav>
             <ul>
                 <li><Link to="/browse">Browse submissions</Link></li>
-                <li><Link to="/archive">Archives</Link></li>
-                <li><Link to="/recordoh">Record</Link></li>
+                <li><Link to="/record-oral-history">Record oral history</Link></li>
                 <li><Link to="/contact-us">Contact</Link></li>
             </ul> 
             <div className="login">

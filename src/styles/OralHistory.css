@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Noto+Serif+KR:wght@200..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Poiret+One&display=swap');
+
+#oral-history main h1 {
+    color: #f1f1f1;
+    font-size: 2rem;
+    margin: 0;
+}
+
+#oral-history main {
+    display: flex;
+    flex-direction: row;
+    padding: 5% 0;
+    gap: 50px;
+    width: 100%;
+}
+
+.tray{
+    padding: 1.5em;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: 60%;
+}
+
+@media (max-width: 768px) {
+    #oral-history main h1 {
+        font-size: 2rem;
+    }
+
+    #oral-history main form {
+        max-width: 100%;
+    }
+
+    #oral-history main input, 
+    #oral-history main textarea {
+        font-size: 0.9rem;
+        padding: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #oral-history main h1 {
+        font-size: 1.8rem;
+    }
+
+    #oral-history main button {
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
+    }
+}

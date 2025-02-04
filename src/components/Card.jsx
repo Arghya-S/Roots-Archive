@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-key */
 /* eslint-disable react/prop-types */
 import "../styles/Card.css"
 
@@ -8,11 +9,15 @@ function Card({key, imageSrc, heading, tags, timeUpdate}){
         <p className="heading">{heading}</p>
         <div className="tags">
             {
-                // eslint-disable-next-line react/jsx-key
-                tags.map(tag => <div className="tag">{tag}</div>)
+                tags.map(tag => {
+                    if (tag == "AI-ARCHIVED"){
+                        return <div className="tag ai-archived">{tag}</div>
+                    } else {
+                        return <div className="tag">{tag}</div> 
+                    }
+                })
             }
         </div>
-
         <p className="time-update">{
             (timeUpdate.magnitude > 1) ? `${timeUpdate.magnitude} ${timeUpdate.type}s ago`
             : `${timeUpdate.magnitude} ${timeUpdate.type} ago`
